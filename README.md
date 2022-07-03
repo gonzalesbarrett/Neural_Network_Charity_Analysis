@@ -47,10 +47,11 @@ The values from the columns that occurred infrequently were filtered down to a l
 
 We then created a list containing string objects and one hot encoder was used to create dummy variables. This changed everything into a numerical format.
 
-    ![](Images/one_hot_encoder.png)
+![](Images/one_hot_encoder.png)
+
 The dataset was then separated into x and y values as well as training and testing sets. The data feature was then altered a mean of zero and a one standard deviation. 
 
-    ![](Images/target_features_splitting_scaling.png)
+![](Images/target_features_splitting_scaling.png)
 
 ### Compiling, Training, and Evaluating the Model
 
@@ -62,7 +63,7 @@ The neural network input contained 43 features and one neuron for the output. Th
 
 Per an evaluation this resulted in a loss of approximately 55% and an accuracy of 72.6%. 
 
-    ![](Images/evaluation_initial.png)
+![](Images/evaluation_initial.png)
 
 ### Optimization
 
@@ -70,19 +71,19 @@ Adjustments were made to improve performance above 75%.
 
 We dropped an extra feature in the hopes of improving performance. "SPECIAL_CONSIDERATION" was selected but it did not change the results in a significant manner.
 
-    ![](Images/first_optimization_test.png)
+![](Images/first_optimization_test.png)
 
 The second attempt we added more neurons to both layers which gave us a total of 100 and 50 neurons. This did not provide a significant difference.  
 
-    ![](Images/more_neurons_test.png)
+![](Images/more_neurons_test.png)
 
 The third attempt we added another hidden layer. This did not provide us with our goal of above 75%.
 
-    ![](Images/third_hidden_layer_test.png)
+![](Images/third_hidden_layer_test.png)
 
 We also attempted to change the activation function on all three layers to tang but this did not solve the issue.
 
-    ![](Images/tanh_activation_function_test.png)
+![](Images/tanh_activation_function_test.png)
 
 ## Summary
 
